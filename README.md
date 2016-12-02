@@ -1,5 +1,7 @@
 # nats-android
 
+##<img src="app/src/main/res/drawable/screen.png" width="300">
+
 Android version of the NATS (http://nats.io/) Server gnatds (https://github.com/nats-io/gnatsd)
 
 ## Quickstart 
