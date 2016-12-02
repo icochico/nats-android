@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="us.ihmc.android.nats.NATSActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nats_release"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:id="@+id/tvRelease"
+        android:fontFamily="monospace" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbRunning"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLogo"
+        app:srcCompat="@drawable/nats_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/nats_default_conf"
+        android:ems="10"
+        android:id="@+id/etConfig"
+        android:layout_alignBaseline="@+id/btnConfig"
+        android:layout_alignBottom="@+id/btnConfig"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnConfig"
+        android:layout_toEndOf="@+id/btnConfig"
+        android:fontFamily="monospace"
+        android:textAlignment="viewStart" />
+
+    <ToggleButton
+        android:text="@string/btn_start_stop_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnStartStop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/pbRunning"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textOff="@string/btn_start_stop_off"
+        android:textOn="@string/btn_start_stop_on"
+        android:layout_below="@+id/btnConfig" />
+
+    <ToggleButton
+        android:text="@string/btn_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPort"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="normal|bold"
+        android:textOff="@string/btn_port"
+        android:textOn="@string/btn_port"
+        android:layout_below="@+id/etHost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/nats_default_host"
+        android:ems="10"
+        android:id="@+id/etHost"
+        android:fontFamily="monospace"
+        android:textAlignment="viewStart"
+        android:layout_alignBaseline="@+id/btnHost"
+        android:layout_alignBottom="@+id/btnHost"
+        android:layout_toRightOf="@+id/btnHost"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHost"
+        android:text="@string/btn_host"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textOff="@string/btn_host"
+        android:textOn="@string/btn_host"
+        android:layout_below="@+id/ivLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/nats_default_port"
+        android:ems="10"
+        android:id="@+id/etPort"
+        android:fontFamily="monospace"
+        android:textAlignment="viewStart"
+        android:layout_alignBottom="@+id/btnPort"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnPort"
+        android:layout_toEndOf="@+id/btnPort" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLog"
+        android:text="@string/btn_log"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="normal|bold"
+        android:textOff="@string/btn_log"
+        android:textOn="@string/btn_log"
+        android:layout_below="@+id/btnPort"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/nats_default_log"
+        android:ems="10"
+        android:id="@+id/etLog"
+        android:fontFamily="monospace"
+        android:textAlignment="viewStart"
+        android:layout_alignBottom="@+id/btnLog"
+        android:layout_alignLeft="@+id/etPort"
+        android:layout_alignStart="@+id/etPort"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:text="@string/btn_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfig"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="normal|bold"
+        android:textOff="@string/btn_config"
+        android:textOn="@string/btn_config"
+        android:layout_below="@+id/btnLog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

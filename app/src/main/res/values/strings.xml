@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">NATS</string>
+    <string name="app_package">us.ihmc.android.nats</string>
+    <string name="nats_release">gnatsd-v0.9.4-linux-arm</string>
+    <string name="nats_executable">gnatsd</string>
+    <string name="nats_default_host">0.0.0.0</string>
+    <string name="nats_default_port">4222</string>
+    <string name="nats_default_conf">nats/nats.conf</string>
+    <string name="nats_default_log">nats/nats-server.log</string>
+
+    <!-- UI elements -->
+    <string name="btn_start_stop_off">Start</string>
+    <string name="btn_start_stop_on">Stop</string>
+    <string name="btn_host">Host</string>
+    <string name="btn_port">Port</string>
+    <string name="btn_log">Log</string>
+    <string name="btn_config">Config</string>
+
+    <!-- Toasts -->
+    <string name="toast_start">NATS Server started</string>
+    <string name="toast_stop">NATS Server stopped</string>
+    <string name="toast_config">WARNING: Config file will override settings</string>
+    <string name="toast_config_not_found">ERROR: Unable to read specified config file</string>
+    <string name="toast_permission_denied">WARNING: Permission denied to read/write External storage</string>
+
+    <!-- Alerts -->
+    <string name="alert_stop_title">Stop NATS Server</string>
+    <string name="alert_stop_message">Are you sure you want to stop NATS Server?</string>
+
+</resources>
