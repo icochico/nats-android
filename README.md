@@ -1,9 +1,10 @@
-# nats-android
+## nats-android
 
 Android version of the NATS (http://nats.io/) Server gnatds (https://github.com/nats-io/gnatsd) 
-Based on gnatsd v0.9.4-linux-arm
 
 #<img src="app/src/main/res/drawable/screen.png" width="300">
+
+Based on gnatsd v0.9.4-linux-arm
 
 ## Quickstart 
 
