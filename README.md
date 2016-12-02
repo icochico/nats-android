@@ -1,6 +1,6 @@
 # nats-android
 
-Android version of the NATS (http://nats.io/) Server gnatds (https://github.com/nats-io/gnatsd)
+Android version of the NATS (http://nats.io/) Server gnatds (https://github.com/nats-io/gnatsd) 
 
 #<img src="app/src/main/res/drawable/screen.png" width="300">
 
@@ -18,3 +18,7 @@ PORT                  Use PORT for clients (default: 4222)
 LOG                   File to redirect log output
 
 CONFIG                Configuration File
+
+LOG requires WRITE_EXTERNAL_STORAGE permissions, CONFIG requires READ_EXTERNAL_STORAGE permissions. 
+
+Click START to start the NATS Server, click STOP to stop the server.
