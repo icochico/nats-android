@@ -30,12 +30,14 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
+        android:id="@+id/ivLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ivLogo"
-        app:srcCompat="@drawable/nats_logo"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/nats_logo" />
 
     <EditText
         android:layout_width="wrap_content"

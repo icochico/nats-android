@@ -26,12 +26,10 @@ object Utils {
             var sdCard: String
             val devModel = Build.MODEL
 
-            if (devModel == "DROID X2") {
-                sdCard = "/sdcard-ext"
-            } else if (devModel == "SGH-I987") {
-                sdCard = "/sdcard/external_sd"
-            } else {
-                try {
+            when (devModel) {
+                "DROID X2" -> sdCard = "/sdcard-ext"
+                "SGH-I987" -> sdCard = "/sdcard/external_sd"
+                else -> try {
                     sdCard = Environment.getExternalStorageDirectory().absolutePath
                     if (sdCard.contains("emulated")) {
                         sdCard = Environment.getExternalStorageDirectory().path
@@ -39,7 +37,6 @@ object Utils {
                 } catch (e: Exception) {
                     sdCard = Environment.getExternalStorageDirectory().path
                 }
-
             }
             return sdCard
         }
