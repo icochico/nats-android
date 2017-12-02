@@ -38,7 +38,7 @@ android {
     }
 }
 
-task cleanAPKs(type: Delete) {
+task cleanAll(type: Delete, dependsOn: clean) {
     delete fileTree(System.getProperty("user.dir")) {
         include '**/*.apk'
     }
